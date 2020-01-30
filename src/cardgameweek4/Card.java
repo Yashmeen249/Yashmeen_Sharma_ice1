@@ -6,14 +6,14 @@ package cardgameweek4;
  */
 public class Card {
     
-        public enum Suit {HEARTS, CLUBS,SPADES,DIAMONDS};
+        public enum Suit {HEARTS, CLUBS,SPADES,DIAMONDS,};
         public enum Value{ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
         private final Suit suit;
         private final Value value;
         
         public Card(Suit s, Value gVal)
         {
-           suit =s;
+            suit =s;
            value= gVal;
         }
 	public Value getValue() {
@@ -24,4 +24,8 @@ public class Card {
 	public Suit getSuit() {
 		return this.suit;
         }
+        public Card() {
+    joker = j;
+}
+}
 }
